@@ -45,6 +45,11 @@ a {
   cursor: pointer;
 }
 
+picture {
+  display: block;
+  line-height: 0px;
+}
+
 .Header {
   position: relative;
   display: flex;
@@ -109,4 +114,32 @@ a {
   width: 12px;
   height: 8px;
   margin-inline-start: 1.4rem;
+}
+
+.Main {
+  min-width: 32rem;
+  padding-inline: 5%;
+  padding-block-start: 4rem;
+  text-align: center;
+  background-color: var(--off-white);
+}
+
+.Main__exchange-container {
+  display: grid;
+  justify-items: center;
+}
+
+.Main__btc-image {
+  width: 19.5rem;
+}
+
+.Main__description > h2 {
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+}
+
+.Main__description > p {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin-top: 2.4rem;
 }
