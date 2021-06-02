@@ -159,7 +159,6 @@ picture {
 
 .Main__card {
   display: grid;
-  height: 20rem;
   width: 20rem;
   align-items: center;
   text-align: left;
@@ -174,6 +173,10 @@ picture {
   padding: 0.8rem;
 }
 
+.Main__table-header--comis {
+  color: var(--secondary-blue);
+}
+
 .Main__table {
   display: grid;
   grid-template-columns: 4fr 2fr 1fr;
@@ -183,6 +186,16 @@ picture {
   font-family: "Inter", sans-serif;
   background-color: var(--just-white);
   padding: 0.8rem;
+  border-radius: 0.8rem;
+  color: #b5b0ac;
+}
+
+.Main__table--comis {
+  grid-template-columns: 2fr 1fr;
+}
+
+.Main__price {
+  color: #757575;
 }
 
 .Main__last-update {
@@ -200,6 +213,10 @@ picture {
   padding: 0.8rem;
 }
 
+.Main__last-update--comis {
+  background-color: var(--soft-blue);
+}
+
 .trending-down-icon {
   background-image: url("./assets/icons/trending-down.svg");
   background-position: center;
@@ -213,7 +230,15 @@ picture {
 }
 
 .Main__left-button {
-  background-image: url("./assets/icons/trending-up.svg");
+  display: flex;
+  justify-content: center;
+}
+
+.Main__left-button > span {
+  display: block;
+  height: 2.4rem;
+  width: 2.4rem;
+  background-image: url("./assets/icons/left-arrow.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -230,4 +255,12 @@ picture {
   background-image: url("./assets/icons/right-arrow.svg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.d-none {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
 }

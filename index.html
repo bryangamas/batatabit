@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js"></script>
   </head>
   <body>
     <header class="Header">
@@ -43,28 +44,50 @@
           </p>
         </div>
         <section class="Main__table-container">
-          <div class="Main__left-button"><span /></div>
+          <div class="Main__left-button hidden" onclick="handleChangeTable()">
+            <span></span>
+          </div>
           <div class="Main__card">
             <h3 class="Main__table-header">Monedas</h3>
             <div class="Main__table">
               <div>Bitcoin</div>
-              <div>$ 1.96</div>
+              <div class="Main__price">$ 1.96</div>
               <span class="trending-down-icon"></span>
               <div>Ethereum</div>
-              <div>$ 0.07</div>
+              <div class="Main__price">$ 0.07</div>
               <span class="trending-up-icon"></span>
               <div>Ripple</div>
-              <div>$ 2.15</div>
+              <div class="Main__price">$ 2.15</div>
               <span class="trending-down-icon"></span>
               <div>Ripple</div>
-              <div>$ 4.96</div>
+              <div class="Main__price">$ 4.96</div>
               <span class="trending-down-icon"></span>
             </div>
             <div class="Main__last-update">
               <p><strong>Actualizado: </strong>19 Julio 23:45</p>
             </div>
           </div>
-          <div class="Main__right-button"><span></span></div>
+          <div class="Main__card d-none">
+            <h3 class="Main__table-header Main__table-header--comis">
+              Comisiones
+            </h3>
+            <div class="Main__table Main__table--comis">
+              <div>Bitrade</div>
+              <div class="Main__price">$ 12.96</div>
+              <div>Bitpreco</div>
+              <div class="Main__price">$ 13.07</div>
+              <div>Novadax</div>
+              <div class="Main__price">$ 13.15</div>
+              <div>Coinext</div>
+              <div class="Main__price">$ 14.96</div>
+            </div>
+            <div class="Main__last-update Main__last-update--comis">
+              <p><strong>Actualizado: </strong>19 Julio 23:45</p>
+            </div>
+          </div>
+          <div class="Main__right-button" onclick="handleChangeTable()">
+            <span></span>
+          </div>
         </section>
       </section>
       <section></section>
