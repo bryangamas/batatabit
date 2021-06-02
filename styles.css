@@ -118,16 +118,16 @@ picture {
 
 .Main {
   min-width: 32rem;
-  padding-inline: 5%;
-  padding-block-start: 4rem;
-  padding-block-end: 5rem;
+  /* padding-block-end: 5rem; */ /* Para la última sección */
   text-align: center;
-  background-color: var(--off-white);
 }
 
 .Main__exchange-container {
+  padding-block-start: 4rem;
   display: grid;
   justify-items: center;
+  background-color: var(--off-white);
+  padding-inline: 5%;
 }
 
 .Main__btc-image {
@@ -263,4 +263,14 @@ picture {
 
 .hidden {
   visibility: hidden;
+}
+
+.Main__product-details {
+  background-color: var(--warm-black);
+  padding-inline: 5%;
+}
+
+.Main__batata-icon {
+  height: 2.4rem;
+  width: 4rem;
 }
