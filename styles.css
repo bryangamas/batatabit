@@ -155,6 +155,7 @@ picture {
   align-items: center;
   width: 100%;
   max-width: 320px;
+  margin-block-end: 6.4rem;
 }
 
 .Main__card {
@@ -241,6 +242,7 @@ picture {
   background-image: url("./assets/icons/left-arrow.svg");
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .Main__right-button {
@@ -255,6 +257,7 @@ picture {
   background-image: url("./assets/icons/right-arrow.svg");
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .d-none {
@@ -265,7 +268,7 @@ picture {
   visibility: hidden;
 }
 
-.Main__product-details {
+.Main__product-features {
   background-color: var(--warm-black);
   padding-inline: 5%;
 }
