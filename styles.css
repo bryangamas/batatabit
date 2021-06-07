@@ -13,7 +13,7 @@
   --soft-blue: #e7f5ff;
   --warm-black: #201e1c;
   --black: #282623;
-  --grey: #bababa;
+  --gray: #bababa;
   --off-white: #faf8f7;
   --just-white: #fff;
   --linear-gradent: linear-gradient(
@@ -22,6 +22,10 @@
     var(--bitcoin-orange) 100%
   );
   --sombra-blanco: 0px 4px 8px rgba(89, 73, 30, 0.16);
+
+  /* Fonts */
+  --h1-mobile: 700 2.4rem / 2.6rem "DM Sans", sans-serif;
+  --h2-mobile: 500 1.4rem / 1.8rem "DM Sans", sans-serif;
 }
 
 * {
@@ -276,4 +280,54 @@ picture {
 .Main__batata-icon {
   height: 2.4rem;
   width: 4rem;
+}
+
+/* Main__product-features */
+.Main__product-features {
+  position: relative;
+}
+
+.Main__batata-icon {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Main__product-description {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding-block-start: 6.4rem;
+  padding-block-end: 3.2rem;
+  padding-inline: 1.6rem;
+  color: var(--just-white);
+}
+
+.Main__product-description > h2 {
+  font: var(--h1-mobile);
+}
+
+.Main__product-description > p {
+  font: var(--h2-mobile);
+  color: var(--gray);
+}
+
+.Main__cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.Main__feature-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black);
+  align-items: flex-start;
+}
+
+.clock {
+  display: inline-block;
+  background-image: url("./assets/icons/clock.svg");
+  width: 24px;
+  height: 24px;
 }
