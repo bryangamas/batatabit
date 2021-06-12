@@ -326,7 +326,8 @@ picture {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  height: 15.2rem;
+  gap: 0.8rem;
+  min-height: 15.2rem;
   background-color: var(--black);
   padding: 1.4rem 2rem;
   text-align: left;
@@ -368,4 +369,31 @@ picture {
 
 .check-circle {
   background-image: url("./assets/icons/check-circle.svg");
+}
+
+.Main__image-section > figure {
+  position: relative;
+}
+
+.Main__image-container {
+  height: 60vh;
+  width: 100%;
+}
+
+.Main__image-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Main__image-description {
+  position: absolute;
+  width: 100%;
+  top: 6.4rem;
+  left: 0;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  color: var(--just-white);
+  text-align: center;
 }
