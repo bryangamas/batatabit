@@ -488,3 +488,28 @@ picture {
   background-repeat: no-repeat;
   background-image: url("./assets/icons/orange-right-arrow.svg");
 }
+
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 4rem 6rem;
+  background-color: var(--bitcoin-orange);
+  color: white;
+  font: var(--h2-mobile);
+}
+
+.Footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.Footer__links > li > a:hover {
+  text-decoration: underline;
+}
+
+.Footer__batata {
+  font-size: 0.8rem;
+}
