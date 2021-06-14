@@ -14,6 +14,7 @@
   --warm-black: #201e1c;
   --black: #282623;
   --gray: #bababa;
+  --dark-gray: #757575;
   --off-white: #faf8f7;
   --just-white: #fff;
   --linear-gradent: linear-gradient(
@@ -127,26 +128,27 @@ picture {
   text-align: center;
 }
 
-.Main__exchange-container {
+.Main__section-container {
   padding-block-start: 4rem;
   display: grid;
   justify-items: center;
   background-color: var(--off-white);
   padding-inline: 5%;
+  padding-block-end: 6.4rem;
 }
 
 .Main__btc-image {
   width: 19.5rem;
 }
 
-.Main__description > h2 {
+.Main__section-description > h2 {
   font-size: 2.4rem;
   line-height: 2.6rem;
   font-weight: bold;
   color: var(--warm-black);
 }
 
-.Main__description > p {
+.Main__section-description > p {
   margin-top: 2.4rem;
   font-size: 1.4rem;
   line-height: 1.8rem;
@@ -160,7 +162,6 @@ picture {
   align-items: center;
   width: 100%;
   max-width: 320px;
-  margin-block-end: 6.4rem;
 }
 
 .Main__card {
@@ -396,4 +397,83 @@ picture {
   line-height: 2.6rem;
   color: var(--just-white);
   text-align: center;
+}
+
+.Main__plans-section {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.Main__plan-card {
+  position: relative;
+  height: 24.7rem;
+  width: 70%;
+  min-width: 19rem;
+  max-width: 24rem;
+  background-color: var(--just-white);
+  box-shadow: var(--sombra-blanco);
+  padding: 1.6rem;
+  margin-top: 5rem;
+}
+
+.Main__card-tag {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  transform: translate(-50%, -50%);
+  color: var(--just-white);
+  font-weight: bold;
+  background-color: var(--bitcoin-orange);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.Main__card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  font-size: 1.2rem;
+  font-family: Inter;
+}
+
+.Main__card-price {
+  font-size: 5.2rem;
+  font-weight: bold;
+}
+
+.Main__card-price > sup {
+  font-size: 1.2rem;
+}
+
+.Main__card-caption {
+  color: var(--dark-gray);
+}
+
+.Main__card-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 1.4rem;
+  margin-right: 0.4rem;
+  margin-left: 0.4rem;
+  border: solid 2px var(--bitcoin-orange);
+  background-color: var(--off-white);
+  border-radius: 4px;
+  font-family: "DM Sans";
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.right-arrow {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./assets/icons/orange-right-arrow.svg");
 }
