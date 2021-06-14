@@ -39,6 +39,7 @@
 html {
   font-size: 62.5%;
   font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -401,16 +402,18 @@ picture {
 
 .Main__plans-section {
   display: flex;
-  justify-content: space-evenly;
   width: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
 }
 
 .Main__plan-card {
   position: relative;
   height: 24.7rem;
   width: 70%;
-  min-width: 19rem;
+  min-width: 20rem;
   max-width: 24rem;
+  scroll-snap-align: center;
   background-color: var(--just-white);
   box-shadow: var(--sombra-blanco);
   padding: 1.6rem;
