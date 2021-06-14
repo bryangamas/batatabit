@@ -407,6 +407,14 @@ picture {
   scroll-snap-type: x proximity;
 }
 
+.Main__plans-section::-webkit-scrollbar {
+  background-color: var(--soft-orange);
+  height: 3px;
+}
+.Main__plans-section::-webkit-scrollbar-thumb {
+  background-color: var(--bitcoin-orange);
+}
+
 .Main__plan-card {
   position: relative;
   height: 24.7rem;
