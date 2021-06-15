@@ -1,0 +1,40 @@
+html {
+  font-size: 72%;
+}
+
+.Header picture {
+  width: 25rem;
+}
+
+.Main__table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  max-width: none;
+}
+
+.Main__plans-section {
+  justify-content: center;
+  overflow-x: initial;
+  gap: 3rem;
+}
+
+.Main__cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Footer__content {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 2rem;
+  padding-bottom: 1.2rem;
+  width: 90%;
+  max-width: 1110px;
+}
+
+.Footer__links {
+  flex-direction: row;
+  gap: 4rem;
+}

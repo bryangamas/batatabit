@@ -11,6 +11,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/tablet.css"
+      media="(min-width: 800px)"
+    />
     <script src="./script.js"></script>
   </head>
   <body>
@@ -44,10 +49,13 @@
           </p>
         </div>
         <section class="Main__table-container">
-          <div class="Main__left-button hidden" onclick="handleChangeTable()">
+          <div
+            class="Main__left-button invisible"
+            onclick="handleChangeTable()"
+          >
             <span></span>
           </div>
-          <div class="Main__card">
+          <div class="Main__card" id="CurrenciesCard">
             <h3 class="Main__table-header">Monedas</h3>
             <div class="Main__table">
               <div>Bitcoin</div>
@@ -67,7 +75,7 @@
               <p><strong>Actualizado: </strong>19 Julio 23:45</p>
             </div>
           </div>
-          <div class="Main__card d-none">
+          <div class="Main__card hidden" id="CommissionsCard">
             <h3 class="Main__table-header Main__table-header--comis">
               Comisiones
             </h3>
@@ -136,6 +144,10 @@
       <section class="Main__image-section">
         <figure>
           <picture class="Main__image-container">
+            <source
+              media="(min-width: 800px)"
+              srcset="./assets/imgs/tablet/bitcoinbaby.png"
+            />
             <img src="./assets/imgs/bitcoinbaby2x.jpg" alt="" />
           </picture>
           <figurecaption class="Main__image-description"
@@ -143,18 +155,18 @@
           </figurecaption>
         </figure>
       </section>
-      <section class="Main__section-container">
+      <section class="Main__section-container" id="planes">
         <div class="Main__section-description">
           <h2>Escoge el plan que mejor se ajuste a ti.</h2>
           <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
         </div>
-        <section class="Main__plans-section" id="planes">
+        <section class="Main__plans-section">
           <article class="Main__plan-card">
             <div class="Main__card-content">
-              <h3>Pago Anual</h3>
-              <p class="Main__card-price"><sup>$</sup>99</p>
+              <h3>Pago mensual</h3>
+              <p class="Main__card-price"><sup>$</sup>15</p>
               <p class="Main__card-caption">
-                *Ahorras $129 comparado al plan mensual.
+                *Plan básico para mantenerte informado.
               </p>
               <button class="Main__card-button">
                 Escoger este <span class="right-arrow"></span>
@@ -165,7 +177,7 @@
             <p class="Main__card-tag">Recomendado</p>
             <div class="Main__card-content">
               <h3>Pago Anual</h3>
-              <p class="Main__card-price"><sup>$</sup>99</p>
+              <p class="Main__card-price"><sup>$</sup>49</p>
               <p class="Main__card-caption">
                 *Ahorras $129 comparado al plan mensual.
               </p>
@@ -176,10 +188,10 @@
           </article>
           <article class="Main__plan-card">
             <div class="Main__card-content">
-              <h3>Pago Anual</h3>
+              <h3>Acceso de por vida</h3>
               <p class="Main__card-price"><sup>$</sup>99</p>
               <p class="Main__card-caption">
-                *Ahorras $129 comparado al plan mensual.
+                *Ahorras $999+ comparado al plan anual.
               </p>
               <button class="Main__card-button">
                 Escoger este <span class="right-arrow"></span>
@@ -190,19 +202,21 @@
       </section>
     </main>
     <footer class="Footer">
-      <section>
-        <ul class="Footer__links">
-          <li><a href="#">Linkedin</a></li>
-          <li><a href="#">Crunchbase</a></li>
-          <li><a href="#">Hackernews</a></li>
-        </ul>
-      </section>
-      <section class="Footer__batata">
-        <picture>
-          <img src="./assets/icons/batata.svg" alt="Logo de Batabit 2020" />
-        </picture>
-        <p>&ReverseElement; Batatabit 2020</p>
-      </section>
+      <div class="Footer__content">
+        <section>
+          <ul class="Footer__links">
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">Crunchbase</a></li>
+            <li><a href="#">Hackernews</a></li>
+          </ul>
+        </section>
+        <section class="Footer__batata">
+          <picture>
+            <img src="./assets/icons/batata.svg" alt="Logo de Batabit 2020" />
+          </picture>
+          <p>&ReverseElement; Batatabit 2020</p>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
