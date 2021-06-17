@@ -117,6 +117,8 @@ picture {
 
 .Header__button > span {
   background-image: url("./assets/icons/down-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   width: 1.2rem;
   height: 0.8rem;
   margin-inline-start: 1.4rem;
@@ -162,7 +164,7 @@ picture {
   grid-template-columns: 1fr 4fr 1fr;
   align-items: center;
   width: 100%;
-  max-width: 320px;
+  max-width: 32rem;
 }
 
 .Main__card {
@@ -494,6 +496,7 @@ picture {
   display: flex;
   justify-content: center;
   background-color: var(--bitcoin-orange);
+  min-width: 32rem;
 }
 
 .Footer__content {
@@ -502,7 +505,6 @@ picture {
   align-items: center;
   padding: 4rem 6rem;
   width: 100%;
-  min-width: 320px;
   color: white;
   font: var(--h2-mobile);
 }
