@@ -127,7 +127,6 @@ picture {
 
 .Main {
   min-width: 32rem;
-  /* padding-block-end: 5rem; */ /* Para la última sección */
   text-align: center;
 }
 
@@ -163,6 +162,7 @@ picture {
 .Main__table-container {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
+  justify-items: center;
   align-items: center;
   width: 100%;
   max-width: 32rem;
@@ -217,8 +217,6 @@ picture {
   border-radius: 8px;
   background-color: var(--soft-orange);
   margin-block-start: 1.6rem;
-  /* width: 90%;
-  height: 3rem; */
   font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   padding: 0.8rem;
@@ -240,11 +238,6 @@ picture {
   background-repeat: no-repeat;
 }
 
-.Main__left-button {
-  display: flex;
-  justify-content: center;
-}
-
 .Main__left-button > span {
   display: block;
   height: 2.4rem;
@@ -253,11 +246,6 @@ picture {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
-}
-
-.Main__right-button {
-  display: flex;
-  justify-content: center;
 }
 
 .Main__right-button > span {
