@@ -14,10 +14,8 @@ const mobileTableContainer = () => {
   document.getElementById("CurrenciesCard").classList.remove("hidden");
   document.getElementById("CommissionsCard").classList.add("hidden");
 
-  const plansContainer = document.querySelector(".Main__plans-section");
-  const planWidth = plansContainer.children[0].offsetWidth;
-
-  plansContainer.scrollLeft = planWidth / 2;
+  let plan = document.getElementsByClassName("Main__plan-card")[1];
+  plan.scrollIntoView({ inline: "center" });
 };
 
 const tabletTableContainer = () => {
